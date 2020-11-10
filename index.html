@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
+    <title>Title</title>
+  </head>
+  <body>
+    <header class="header" id="top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="header_navbar">
+              <a class="header_navbar_brand_logo" href="/"><img src="./img/kun-uz-logo.svg" alt="logo"/></a>
+              <div class="header_navbar_collapse">
+                <div class="header_navbar_collapse_absolute"></div>
+                <ul class="header_navbar_collapse_nav">
+                  <li class="header_navbar_collapse_nav_close">
+                    <button type="button" class="header_navbar_collapse_nav_close_btn">&times;</button>
+                  </li>
+                  <li class="language-wrap">
+                    <div class="language-wrap_label">Выберите язык</div>
+                    <div class="language-wrap_list">
+                      <a href="javascript:" class="lang-link"><span>Ўз</span></a>
+                      <a href="javascript:" class="lang-link"><span>O`z</span></a>
+                      <a href="javascript:" class="lang-link active"><span>Ру</span></a>
+                      <a href="javascript:" class="lang-link"><span>En</span></a>
+                    </div>
+                  </li>
+                  <li class="profile-wrap">
+                    <a class="settings-icon" href="javascript:"></a>
+                    <div class="d-flex align-items-center">
+                      <div class="text-right">
+                        <a href="javascript:">Войти /</a> <a href="javascript:">Регистрация</a>
+                      </div>
+                      <img src="img/default-img.jpg" />
+                    </div>
+                  </li>
+                  <li class="header_navbar_collapse_nav_item">
+                    <div class="header_navbar_collapse_nav_item_pad">
+                      <a class="header_navbar_collapse_nav_item_link" href="javascript:">Ўзбекистон</a>
+                    </div>
+                  </li>
+                  <li class="header_navbar_collapse_nav_item">
+                    <div class="header_navbar_collapse_nav_item_pad">
+                      <a class="header_navbar_collapse_nav_item_link" href="javascript:">Жаҳон</a>
+                    </div>
+                  </li>
+                  <li class="header_navbar_collapse_nav_item">
+                    <div class="header_navbar_collapse_nav_item_pad">
+                      <a class="header_navbar_collapse_nav_item_link" href="javascript:">Иқтисодиёт</a>
+                    </div>
+                  </li>
+                  <li class="header_navbar_collapse_nav_item">
+                    <div class="header_navbar_collapse_nav_item_pad">
+                      <a class="header_navbar_collapse_nav_item_link" href="javascript:">Жамият</a>
+                    </div>
+                  </li>
+                  <li class="header_navbar_collapse_nav_item">
+                    <div class="header_navbar_collapse_nav_item_pad">
+                      <a class="header_navbar_collapse_nav_item_link" href="javascript:">Технология</a>
+                    </div>
+                  </li>
+                  <li class="header_navbar_collapse_nav_item">
+                    <div class="header_navbar_collapse_nav_item_pad">
+                      <a class="header_navbar_collapse_nav_item_link" href="javascript:">Спорт</a>
+                    </div>
+                  </li>
+                  <li class="header_navbar_collapse_nav_item">
+                    <div class="header_navbar_collapse_nav_item_pad">
+                      <a class="header_navbar_collapse_nav_item_link" href="javascript:">Kun.uz light</a>
+                    </div>
+                  </li>
+                  <li class="header_navbar_collapse_nav_item">
+                    <div class="header_navbar_collapse_nav_item_pad">
+                      <a class="header_navbar_collapse_nav_item_link" href="javascript:">Аудио хабар</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="header_navbar_search-block">
+                <form>
+                  <div class="form-group">
+                    <button class="search-button"></button>
+                    <input id="search-input" name="q" value="" placeholder="Поиск" required="true" />
+                    <button type="button" class="search-button-close">&times;</button>
+                  </div>
+                </form>
+              </div>
+              <div class="header_navbar_collapse_nav_item header_navbar_collapse_nav_pad-btn">
+                <div class="header_navbar_collapse_nav_item_pad">
+                  <a
+                    class="header_navbar_collapse_nav_item_btn btn"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#individualTourModal"
+                    >Коронавирус</a
+                  >
+                </div>
+              </div>
+              <div class="header_navbar_search">
+                <ul class="nav">
+                  <a class="btn nav-link nav-search" type="submit" href="javascript:"></a>
+                </ul>
+              </div>
+              <div class="header_navbar_profile">
+                <ul class="nav">
+                  <div class="d-flex align-items-center dropdown">
+                    <a
+                      class="btn nav-link"
+                      type="submit"
+                      href="#"
+                      data-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      ><img src="img/profile-icon.svg" alt="profile-icon"
+                    /></a>
+                    <div class="dropdown-menu dropdown-menu-right header_navbar_profile_menu_dropdown">
+                      <a class="dropdown-item header_navbar_profile_menu_dropdown_item" href="#">Войти</a>
+                      <a class="dropdown-item header_navbar_profile_menu_dropdown_item" href="#">Регистрация</a>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="header_navbar_lang">
+                <ul class="nav">
+                  <div class="d-flex align-items-center dropdown">
+                    <a
+                      class="nav-link header_navbar_lang_menu_link"
+                      data-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      ><span class="header_navbar_lang_menu_link-text">Ўзбекча</span></a
+                    >
+                    <div class="dropdown-menu dropdown-menu-right header_navbar_lang_menu_dropdown">
+                      <a class="dropdown-item header_navbar_lang_menu_dropdown_item" href="javascript:">O'zbekcha</a>
+                      <a class="dropdown-item header_navbar_lang_menu_dropdown_item" href="javascript:">Русский</a>
+                      <a class="dropdown-item header_navbar_lang_menu_dropdown_item" href="javascript:">English</a>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="header_navbar_menutoggle">
+                <input type="checkbox" /> <span></span> <span></span> <span></span>
+              </div>
+            </nav>
+            <div class="covid_block">
+              <div class="covid_block_title">
+                <div class="covid_block_title_img"><img src="img/virus.svg" alt="virus" /></div>
+                <a target="_blank" href="javascript:" class="text">Коронавирус COVID-19<br />Ўзбекистонда</a>
+              </div>
+              <div class="covid_block_list">
+                <div class="covid_block_item">
+                  <div class="img"><img src="img/covid-i-1.svg" alt="covid-i-1" /></div>
+                  <div class="covid_block_item_text">
+                    <p>Юқтирганлар</p>
+                    <span><b>18324</b> киши</span>
+                  </div>
+                </div>
+                <div class="covid_block_item">
+                  <div class="img"><img src="img/covid-i-2.svg" alt="covid-i-2" /></div>
+                  <div class="covid_block_item_text">
+                    <p>Соғайганлар</p>
+                    <span><b>9666</b> киши</span>
+                  </div>
+                </div>
+                <div class="covid_block_item">
+                  <div class="img"><img src="img/covid-i-3.svg" alt="covid-i-3" /></div>
+                  <div class="covid_block_item_text">
+                    <p>Вафот этганлар</p>
+                    <span><b>97</b> киши</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main">
+        <div class="container mb-50">
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="top-news">
+                <div class="top-news_big">
+                  <a class="big-news" href="javascript:"
+                    ><span class="big-news_img"><img src="img/top-big.jpg" alt="top-big-jpg" /> </span
+                    ><span class="big-news_content"
+                      ><div class="news-meta"><span>15:56</span></div>
+                      <span class="big-news_title"
+                        >Коронавирус билан касалланганларни даволашда қўлланиладиган импорт қилинувчи дорилар рўйхати
+                        тасдиқланди</span
+                      >
+                      <span class="big-news_description"
+                        >Вазирлар Маҳкамасининг “Коронавирус пандемияси даврида дори воситалари, тиббий буюмлар ва
+                        тиббий техникалар муомаласини тартибга солишга доир чора-тадбирлар тўғрисида”ги қарори қабул
+                        қилинди.</span
+                      ></span
+                    ></a
+                  >
+                </div>
+                <div class="top-news_small-items">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="small-news">
+                        <a class="small-news_img" href="javascript:"><img src="img/new-img-1.jpg" alt="news-img-1"/></a>
+                        <div class="small-news_content">
+                          <div class="news-meta"><span>15:37</span></div>
+                          <a class="small-news_title" href="javascript:"
+                            >Дори воситаларининг Ўзбекистон ҳудудидан ташқарига олиб чиқилиши 1 октябрга қадар
+                            тўхтатилди</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="small-news">
+                        <a class="small-news_img" href="javascript:"><img src="img/new-img-2.jpg" alt="news-img-2"/></a>
+                        <div class="small-news_content">
+                          <div class="news-meta"><span>15:09</span></div>
+                          <a class="small-news_title" href="javascript:"
+                            >Вазият жиддий, стереотипларни синдириш вақти келди</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="small-news">
+                        <a class="small-news_img" href="javascript:"><img src="img/new-img-3.jpg" alt="news-img-3"/></a>
+                        <div class="small-news_content">
+                          <div class="news-meta"><span>12:26</span></div>
+                          <a class="small-news_title" href="javascript:"
+                            >Кириш имтиҳонлари сентябрда ўтказилиши ҳам мумкин</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="small-news">
+                        <a class="small-news_img" href="javascript:"><img src="img/new-img-4.jpg" alt="news-img-4"/></a>
+                        <div class="small-news_content">
+                          <div class="news-meta"><span>18:24 / 21.07.2020</span></div>
+                          <a class="small-news_title" href="javascript:"
+                            >Россия Мудофаа вазирлиги коронавирусга қарши вакцина тайёрлигини маълум қилди. Нега бу
+                            ёлғон бўлиб чиқиши мумкин?</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="editor-choice">
+                <div class="block-title">
+                  <a href="javascript:"><span>Муҳаррир танлови</span></a
+                  ><a class="link" href="javascript:">Барчаси</a>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="news">
+                      <a class="news_img" href="javascript:"><img src="img/new-img-5.jpg" alt="news-img-5"/></a>
+                      <div class="news-meta"></div>
+                      <a class="news_title" href="javascript:"
+                        >Янги агентлик Ўзбекистонда коррупцияни жиловлай оладими? – Акмал Бурҳонов билан интервю</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="news">
+                      <a class="news_img" href="javascript:"><img src="img/new-img-6.jpg" alt="news-img-6"/></a>
+                      <div class="news-meta"></div>
+                      <a class="news_title" href="javascript:"
+                        >«Энг муҳими – тушкунликка тушмаслик». Коронавирусга чалиниб, реанимациядан соғайиб чиққан бемор
+                        ҳикояси</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="news">
+                      <a class="news_img" href="javascript:"><img src="img/new-img-7.jpg" alt="news-img-7"/></a>
+                      <div class="news-meta"></div>
+                      <a class="news_title" href="javascript:"
+                        >Антибиотиклар вирусларни ўлдирмаслигини унутмаслик керак — профессор Гулнора Ибодова билан
+                        суҳбат</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <a href="javascript:" class="block-title"><span>Сўнгги янгиликлар</span></a>
+              <div class="mb-25">
+                <a class="news-lenta" href="javascript:"
+                  ><div class="news-meta"><span>23:46</span></div>
+                  <span class="news-lenta_title"
+                    >Эксперт: COVID-19'дан тузалгандан кейин ҳам иситма бир неча ҳафта сақланиб қолиши мумкин</span
+                  > </a
+                ><a class="news-lenta" href="javascript:"
+                  ><div class="news-meta"><span>23:06</span></div>
+                  <span class="news-lenta_title"
+                    >Ефремовнинг судида Мамаев ва Кокорин ишини кўрган судья ишлайди</span
+                  > </a
+                ><a class="news-lenta" href="javascript:"
+                  ><div class="news-meta"><span>22:54</span></div>
+                  <span class="news-lenta_title"
+                    >«Бу юз фоиз миш-миш» — Ўзбекистонда коронавирус эмас, ўлат тарқалгани ҳақидаги гаплар рад
+                    этилди</span
+                  > </a
+                ><a class="news-lenta" href="javascript:"
+                  ><div class="news-meta"><span>22:25</span></div>
+                  <span class="news-lenta_title"
+                    >Дилором Тошмуҳаммедова коронавирус тестлари ўтказишни кескин кўпайтиришни таклиф қилди</span
+                  > </a
+                ><a class="news-lenta" href="javascript:"
+                  ><div class="news-meta"><span>22:13</span></div>
+                  <span class="news-lenta_title">Олимлар ультрабинафша коронавирусни ўлдиришини исботлашди</span> </a
+                ><a class="news-lenta" href="javascript:"
+                  ><div class="news-meta"><span>22:13</span></div>
+                  <span class="news-lenta_title"
+                    >Рамзан Қодировнинг танқидчиси бўлган чечен Австрияда ўлдирилганди. Бир гуруҳ чеченистонликлар
+                    қотилликни зиммаларига олишди</span
+                  > </a
+                ><a class="news-lenta" href="javascript:"
+                  ><div class="news-meta"><span>21:59</span></div>
+                  <span class="news-lenta_title"
+                    >Депутатнинг шов-шувли таклифи: у нега ёлғон ахборотдан фойдаланди?</span
+                  > </a
+                ><a class="news-lenta" href="javascript:"
+                  ><div class="news-meta"><span>21:21</span></div>
+                  <span class="news-lenta_title"
+                    >Uzbekistan Airways: Сентябрдан Россияга парвозлар тикланиши ҳали сўроқ остида</span
+                  ></a
+                >
+              </div>
+              <a href="javascript:" class="btn w-100">Кўпроқ янгилик</a>
+            </div>
+          </div>
+        </div>
+        <div class="adv-wrapper">
+          <div class="container">
+            <a href="javascript:" target="_BLANK" class="adv-banner-center"><img src="img/banner.jpg" alt="banner"/></a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="block-title"><span>Долзарб хабарлар</span></div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="big-news big-news_column">
+                <a class="big-news_img" href="javascript:"><img src="img/new-img-8.jpg" alt="news-img-8"/></a>
+                <div class="big-news_content">
+                  <a class="big-news_title" href="javascript:"
+                    >Футболни хусусийлаштириш йўлида. «Турон» бунинг самарасини исботлай оладими?</a
+                  >
+                  <div class="big-news_description">
+                    Ўзбек футболини хусусийлаштириш ҳақида кўп гапирилмоқда. Айниқса охирги йилларда. Узоқ вақт
+                    иқтисодий мустақиллик борасида умуман олдинга силжимаган футболимизда бундай ҳаракатларнинг пайдо
+                    бўлгани жуда ёқимли.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-6 mb-25">
+                  <div class="news">
+                    <a class="news_category" href="javascript:">Ўзбекистон</a
+                    ><a class="news_img" href="javascript:"> <img src="img/new-img-9.jpg" alt="news-img-9" /> </a
+                    ><a class="news_title" href="javascript:"
+                      >Олий таълимда кредит-модуль: янги ўқув йилида талабаларни нималар кутмоқда?</a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-25">
+                  <div class="news">
+                    <a class="news_category" href="javascript:">Ўзбекистон</a
+                    ><a class="news_img" href="javascript:"> <img src="img/new-img-10.jpg" alt="news-img-10" /> </a
+                    ><a class="news_title" href="javascript:"
+                      >84та тиббий буюм ва техника Ўзбекистонда рўйхатдан ўтказмасдан импорт қилинади (рўйхат)</a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-25">
+                  <div class="news">
+                    <a class="news_category" href="javascript:">Ўзбекистон</a
+                    ><a class="news_img" href="javascript:"> <img src="img/new-img-11.jpg" alt="news-img-11" /> </a
+                    ><a class="news_title" href="javascript:"
+                      >«Улар бирорта далилга асосланмаган» – мутахассис Россияда ишлаб чиқарилган дорилардан
+                      фойдаланмасликка чақирди</a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-25">
+                  <div class="news">
+                    <a class="news_category" href="javascript:">Ўзбекистон</a>
+                    <a class="news_img" href="javascript:"><img src="img/new-img-12.jpg" alt="news-img-12" /> </a
+                    ><a class="news_title" href="javascript:"
+                      >Пандемия шароитида ишсизлик ва камбағалликка қарши қандай курашилмоқда? Тошкент вилояти ҳокими
+                      билан суҳбат</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block-title mt-30">
+            <a href="javascript:"><span>Коронавирус Ўзбекистонда</span></a
+            ><a class="link" href="javascript:">Барча мақолалар</a>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="news-overlay">
+                <img class="news-overlay_img" src="img/new-img-13.jpg" alt="news-img-13" role="presentation" />
+                <a class="news-overlay_category" href="javascript:">Ўзбекистон</a>
+                <a class="news-overlay_title" href="javascript:"
+                  >«Бу юз фоиз миш-миш» — Ўзбекистонда коронавирус эмас, ўлат тарқалгани ҳақидаги гаплар рад этилди</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="news-overlay news-overlay_small">
+                    <img class="news-overlay_img" src="img/new-img-14.jpg" alt="news-img-14" />
+                    <a class="news-overlay_category" href="javascript:">Ўзбекистон</a>
+                    <a class="news-overlay_title" href="javascript:"
+                      >Депутатнинг шов-шувли таклифи: у нега ёлғон ахборотдан фойдаланди?</a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="news-overlay news-overlay_small">
+                    <img class="news-overlay_img" src="img/new-img-15.jpg" alt="news-img-15" role="presentation" /><a
+                      class="news-overlay_category"
+                      href="javascript:"
+                      >Жамият</a
+                    >
+                    <a class="news-overlay_title" href="javascript:"
+                      >Колл-марказдан аҳоли эшигигача — хайрияларни етказувчи кўнгиллилар қандай ишламоқда?</a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="news-overlay news-overlay_small">
+                    <img class="news-overlay_img" src="img/new-img-16.jpg" alt="news-img-16" role="presentation" /><a
+                      class="news-overlay_category"
+                      href="javascript:"
+                      >Ўзбекистон</a
+                    >
+                    <a class="news-overlay_title" href="javascript:"
+                      >84та тиббий буюм ва техника Ўзбекистонда рўйхатдан ўтказмасдан импорт қилинади (рўйхат)</a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="news-overlay news-overlay_small">
+                    <img class="news-overlay_img" src="img/new-img-17.jpg" alt="news-img-17" role="presentation" />
+                    <a class="news-overlay_category" href="javascript:">Ўзбекистон</a>
+                    <a class="news-overlay_title" href="javascript:"
+                      >Коронавирус билан касалланганларни даволашда қўлланиладиган импорт қилинувчи дорилар рўйхати
+                      тасдиқланди</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8" id="authored-news">
+              <div class="block-title mt-30">
+                <a href="javascript:"><span>Мақолалар</span></a> <a class="link" href="javascript:">Барчаси</a>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 mb-30">
+                  <div class="news">
+                    <a class="news_category" href="javascript:">Ўзбекистон</a>
+                    <a class="news_img" href="javascript:"><img src="img/new-img-18.jpg" alt="news-img-18" /> </a
+                    ><a class="news_title" href="javascript:"
+                      >Олий таълимда кредит-модуль: янги ўқув йилида талабаларни нималар кутмоқда?</a
+                    >
+                    <div class="news_desc">
+                      Университетга ўқишга кирганингиздан сўнг талаба сифатида у ерда айнан қайси фанларни ўрганишни
+                      қисман бўлса-да, ўзингиз танлашингиз мумкинлигини ҳеч тасаввур қилганмисиз?
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-30">
+                  <div class="news">
+                    <a class="news_category" href="javascript:">Ўзбекистон</a>
+                    <a class="news_img" href="javascript:"><img src="img/new-img-19.jpg" alt="news-img-19" /> </a
+                    ><a class="news_title" href="javascript:">Вазият жиддий, стереотипларни синдириш вақти келди</a>
+                    <div class="news_desc">
+                      Пандемия билан курашиш қандай кечаётганидан ҳар биримиз озми-кўпми хабардормиз. Борган сари тезкор
+                      чоралар амалга ошириш зарурати сезилмоқда.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-30">
+                  <div class="news">
+                    <a class="news_category" href="javascript:">Жамият</a
+                    ><a class="news_img" href="javascript:"> <img src="img/new-img-20.jpg" alt="news-img-20" /> </a
+                    ><a class="news_title" href="javascript:"
+                      >Қишлоқда таппи ёққан аёллар. Гендер тенглигидан олдинги гаплар</a
+                    >
+                    <div class="news_desc">
+                      Бир неча ой давомида хотин-қизлар билан суҳбатда бўлиб, уларнинг ўй-фикрлари, кечинмалари,
+                      муаммоларини ҳаётий ҳикоялар шаклида ёзиб боряпман. Уларнинг дард-у ташвиши, елкасига олган
+                      масъулиятини эшитиб, бир хулосага келиш мумкин: жамиятимиз аёллар манфаатини энг қуйи поғонага
+                      тушириб бўлган.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-30">
+                  <div class="news">
+                    <a class="news_category" href="javascript:">Ўзбекистон</a
+                    ><a class="news_img" href="javascript:"> <img src="img/new-img-21.jpg" alt="news-img-21" /> </a
+                    ><a class="news_title" href="javascript:"
+                      >Ижтимоий коллапс – нима у? Унга тушиб қолмаслик учун нима қилиш керак?</a
+                    >
+                    <div class="news_desc">
+                      Ижтимоий коллапс — жамиятнинг базавий институтлари ишламай қолиши натижасида юз берадиган кенг
+                      қамровли инқироз. Ижтимоий коллапс жамият билан содир бўлиши мумкин бўлган инқирозларнинг энг
+                      фожиали формаси бўлиб, унга учраган жамият жамият сифатида барҳам топишгача бориши мумкин.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4" id="interview-news-content">
+              <div class="block-title mt-30">
+                <a href="javascript:"><span>Интервью</span></a
+                ><a class="link" href="javascript:">Барчаси</a>
+              </div>
+              <a class="news-interview" href="javascript:"
+                ><span class="news-interview_title"
+                  >Пандемия шароитида ишсизлик ва камбағалликка қарши қандай курашилмоқда? Тошкент вилояти ҳокими билан
+                  суҳбат</span
+                ><img class="news-interview_img" src="img/new-img-1.jpg" alt="news-img-1"/></a
+              ><a class="news-interview" href="javascript:"
+                ><span class="news-interview_title"
+                  >Ҳукумат ёшлар билан ишлашда нега давлат ташкилоти тизимини танлади? — Алишер Саъдуллаев билан суҳбат
+                  (1-қисм)</span
+                ><img class="news-interview_img" src="img/new-img-2.jpg" alt="news-img-2"/></a
+              ><a class="news-interview" href="javascript:"
+                ><span class="news-interview_title"
+                  >«Коррупцияга юмшоқ қонунчилик, лавозимига номуносиб ҳокимлар, декларация тизими ва оффшорлар» – Акмал
+                  Бурҳонов билан суҳбат (2 - қисм)</span
+                ><img class="news-interview_img" src="img/new-img-3.jpg" alt="news-img-3"/></a
+              ><a class="news-interview" href="javascript:"
+                ><span class="news-interview_title"
+                  >GSP+ тизими Ўзбекистонга нима беради? — Германия элчиси билан суҳбат</span
+                >
+                <img class="news-interview_img" src="img/new-img-4.jpg" alt="news-img-4"/></a
+              ><a class="news-interview" href="javascript:"
+                ><span class="news-interview_title"
+                  >«Жасурни трансфер қиляпмиз». «Бунёдкор» ФК раҳбари Европадан таклифлар, Ғиёсовнинг қайтиши ва
+                  коронавирус ҳақида</span
+                ><img class="news-interview_img" src="img/new-img-5.jpg" alt="news-img-5"/></a
+              ><a class="news-interview" href="javascript:"
+                ><span class="news-interview_title"
+                  >Шонли ўтмиш ва Саркисянсиз «Нефтчи» ҳақида Абдусамад Дўрмонов билан суҳбат</span
+                ><img class="news-interview_img" src="img/new-img-6.jpg" alt="news-img-6"
+              /></a>
+            </div>
+          </div>
+          <div class="business-block" id="business-news">
+            <div class="business-block_head mb-15">
+              <div><img src="img/kun-uz-logo.svg" alt="kun-uz-logo" /> <span>Бизнес</span></div>
+              <a class="btn" href="javascript:">Ҳамкорлик қилиш</a>
+            </div>
+            <div class="business-block_slider">
+              <div class="swiper-container swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="width: 288.75px; margin-right: 26px;">
+                    <a class="news-business" href="javascript:"
+                      ><span class="news-business_img-wrapper"
+                        ><span class="news-business_img"><img src="img/new-img-7.jpg" alt="news-img-7" /> </span></span
+                      ><span class="news-business_title"
+                        >UZTELECOM миллий уяли алоқа операторининг фойдали интернет тўпламлари</span
+                      ></a
+                    >
+                  </div>
+                  <div class="swiper-slide" style="width: 288.75px; margin-right: 26px;">
+                    <a class="news-business" href="javascript:"
+                      ><span class="news-business_img-wrapper"
+                        ><span class="news-business_img"><img src="img/new-img-8.jpg" alt="news-img-8" /> </span></span
+                      ><span class="news-business_title"
+                        >«Yangi ChoshTepa» – қулайлигингиз учун квадрат метрлар</span
+                      ></a
+                    >
+                  </div>
+                  <div class="swiper-slide" style="width: 288.75px; margin-right: 26px;">
+                    <a class="news-business" href="javascript:"
+                      ><span class="news-business_img-wrapper"
+                        ><span class="news-business_img"><img src="img/new-img-9.jpg" alt="news-img-9" /> </span></span
+                      ><span class="news-business_title">Mirabad Avenue: Шопинг-авенюда қайси брендлар бўлади?</span></a
+                    >
+                  </div>
+                  <div class="swiper-slide" style="width: 288.75px; margin-right: 26px;">
+                    <a class="news-business" href="javascript:"
+                      ><span class="news-business_img-wrapper"
+                        ><span class="news-business_img"
+                          ><img src="img/new-img-10.jpg" alt="news-img-10" /> </span></span
+                      ><span class="news-business_title"
+                        >Dream Architect дизайн-бюроси фойдали шартлар билан таъмирлаш ва дизайн ишларида
+                        ёрдамлашади</span
+                      ></a
+                    >
+                  </div>
+                  <div class="swiper-slide" style="width: 288.75px; margin-right: 26px;">
+                    <a class="news-business" href="javascript:"
+                      ><span class="news-business_img-wrapper"
+                        ><span class="news-business_img"
+                          ><img src="img/new-img-12.jpg" alt="news-img-12" /> </span></span
+                      ><span class="news-business_title"
+                        >UzAuto Motors Service &amp; Trade-In Center барча хоҳловчилар учун минилган автомобиллар
+                        бозорини очади</span
+                      ></a
+                    >
+                  </div>
+                  <div class="swiper-slide" style="width: 288.75px; margin-right: 26px;">
+                    <a class="news-business" href="javascript:"
+                      ><span class="news-business_img-wrapper"
+                        ><span class="news-business_img"
+                          ><img src="img/new-img-13.jpg" alt="news-img-13" /> </span></span
+                      ><span class="news-business_title"
+                        >Туронбанкнинг замонавий Банк хизматлари офиси яна 10 тага кўпайди!</span
+                      ></a
+                    >
+                  </div>
+                  <div class="swiper-slide" style="width: 288.75px; margin-right: 26px;">
+                    <a class="news-business" href="javascript:"
+                      ><span class="news-business_img-wrapper"
+                        ><span class="news-business_img"
+                          ><img src="img/new-img-14.jpg" alt="news-img-14" /> </span></span
+                      ><span class="news-business_title"
+                        >«Мастодинон» препаратигормонал фонни мувофиқлаштириш ва ҳайз кўришдан олдинги синдром
+                        аломатларидан қутулиш имконини беради</span
+                      ></a
+                    >
+                  </div>
+                  <div class="swiper-slide" style="width: 288.75px; margin-right: 26px;">
+                    <a class="news-business" href="javascript:"
+                      ><span class="news-business_img-wrapper"
+                        ><span class="news-business_img"
+                          ><img src="img/new-img-15.jpg" alt="news-img-15" /> </span></span
+                      ><span class="news-business_title"
+                        >Японияда абитуриентлар инқирози: бундан ўзбекистонликлар қанчалик манфаатдор?</span
+                      ></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next swiper-btn"></div>
+              <div class="swiper-button-prev swiper-btn"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6" id="video-news-content">
+              <div class="block-title mt-30">
+                <a href="javascript:"><span>Видеоянгиликлар</span> </a
+                ><a class="link" href="javascript:">Барча мақолалар</a>
+              </div>
+              <a class="top-gallery" href="javascript:"
+                ><span class="top-gallery_img"><img src="img/new-img-16.jpg" alt="news-img-16" /> </span
+                ><span class="top-gallery_play-icon video"></span>
+                <span class="top-gallery_title"
+                  >Футболни хусусийлаштириш йўлида. «Турон» бунинг самарасини исботлай оладими?</span
+                ></a
+              >
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="gallery-item">
+                    <a class="gallery-item_img" href="javascript:"
+                      ><div class="img"><img src="img/new-img-17.jpg" alt="news-img-17" /></div>
+                      <span class="gallery-item_play-icon video"></span
+                    ></a>
+                    <div class="news-meta"><span>17:04</span> <a class="category" href="javascript:">Жамият</a></div>
+                    <a class="gallery-item_title" href="javascript:"
+                      >Колл-марказдан аҳоли эшигигача — хайрияларни етказувчи кўнгиллилар қандай ишламоқда?</a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="gallery-item">
+                    <a class="gallery-item_img" href="javascript:"
+                      ><div class="img"><img src="img/new-img-18.jpg" alt="news-img-18" /></div>
+                      <span class="gallery-item_play-icon video"></span
+                    ></a>
+                    <div class="news-meta"><span>14:20</span><a class="category" href="javascript:">Ўзбекистон</a></div>
+                    <a class="gallery-item_title" href="javascript:"
+                      >«Улар бирорта далилга асосланмаган» – мутахассис Россияда ишлаб чиқарилган дорилардан
+                      фойдаланмасликка чақирди</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" id="photo-news-content">
+              <div class="block-title mt-30">
+                <a href="javascript:"><span>Фотоянгиликлар</span></a
+                ><a class="link" href="javascript:">Барча мақолалар</a>
+              </div>
+              <a class="top-gallery" href="javascript:"
+                ><span class="top-gallery_img"><img src="img/new-img-19.jpg" alt="news-img-19" /> </span
+                ><span class="top-gallery_play-icon image"></span
+                ><span class="top-gallery_title">Украинада йўловчи автобуси гаровга олинди. Асосий маълумотлар</span></a
+              >
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="gallery-item">
+                    <a class="gallery-item_img" href="javascript:"
+                      ><div class="img"><img src="img/new-img-20.jpg" alt="news-img-20" /></div>
+                      <span class="gallery-item_play-icon image"></span
+                    ></a>
+                    <div class="news-meta">
+                      <span>20:52 / 19.07.2020</span><a class="category" href="javascript:">Ўзбекистон</a>
+                    </div>
+                    <a class="gallery-item_title" href="javascript:"
+                      >Худди кинолардагидек. Суратларда кимсасиз Қашқадарё</a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="gallery-item">
+                    <a class="gallery-item_img" href="javascript:"
+                      ><div class="img"><img src="img/new-img-21.jpg" alt="news-img-21" /></div>
+                      <span class="gallery-item_play-icon image"></span
+                    ></a>
+                    <div class="news-meta">
+                      <span>15:22 / 19.07.2020</span><a class="category" href="javascript:">Ўзбекистон</a>
+                    </div>
+                    <a class="gallery-item_title" href="javascript:">Фотогалерея: Тошкентда қатъий локдаун</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer_top">
+        <div class="container">
+          <div class="always-aware">
+            <a class="site-logo" href="javascript:"><img src="img/logo-ellipse.svg"/></a>
+            <div class="title">Ҳар доим хабардор бўлинг!</div>
+            <div class="subtitle">kun.uz мобил иловаларини кўчириб олинг ва барча янгиликлар сиз билан</div>
+          </div>
+          <div class="store">
+            <a href="javascript:"><img src="img/18plus.svg" /> </a
+            ><a class="app-store" href="javascript:" target="_blank"><img src="img/app-store.svg" /> </a
+            ><a class="google-play" href="javascript:" target="_blank"><img src="img/google-play.svg"/></a>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer_bottom">
+        <div class="container">
+          <ul class="footer-menu reset-list">
+            <li class="footer-menu_item"><a href="javascript:">Сайт ҳақида</a></li>
+            <li class="footer-menu_item"><a href="javascript:">RSS</a></li>
+            <li class="footer-menu_item"><a href="javascript:">Алоқа</a></li>
+            <li class="footer-menu_item"><a href="javascript:">Реклама</a></li>
+            <li class="footer-menu_item"><a href="javascript:">Кун мавзулари</a></li>
+            <li class="footer-menu_item"><a href="javascript:">Kun.uz жамоаси</a></li>
+          </ul>
+          <div class="footer-bottom">
+            <div class="footer-text">
+              «KUN.UZ» сайтида эълон қилинган материаллардан нусха кўчириш, тарқатиш ва бошқа шаклларда фойдаланиш фақат
+              таҳририят ёзма розилиги билан амалга оширилиши мумкин.<br />Гувоҳнома: №0987. Берилган санаси: 22.06.2015
+              йил. Муассис: «WEB EXPERT» МЧЖ. Таҳририят манзили: 100043, Тошкент шаҳри, К. Ёрматов кўчаси, 12-уй.
+              Электрон манзил: info@kun.uz.<br />Сайтда эълон қилинаётган муаллифлик мақолаларида келтирилган фикрлар
+              муаллифга тегишли ва улар Kun.uz таҳририяти нуқтаи назарини ифода этмаслиги мумкин.
+            </div>
+            <ul class="social-items reset-list">
+              <div class="social-item">
+                <a href="javascript:" target="_blank"><img src="img/social-youtube.svg"/></a>
+              </div>
+              <div class="social-item">
+                <a href="javascript:" target="_blank"><img src="img/social-telegram.svg"/></a>
+              </div>
+              <div class="social-item">
+                <a href="javascript:" target="_blank"><img src="img/social-facebook.svg"/></a>
+              </div>
+              <div class="social-item">
+                <a href="javascript:" target="_blank"><img src="img/social-twitter.svg"/></a>
+              </div>
+              <div class="social-item">
+                <a href="javascript:" target="_blank"><img src="img/social-instagram.svg"/></a>
+              </div>
+              <div class="social-item">
+                <a href="javascript:" target="_blank"><img src="img/social-rss.svg"/></a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a class="cd-top js-cd-top cd-top--fade-out cd-top--show" href="javascript:">Top</a>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
